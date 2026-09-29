@@ -11,13 +11,16 @@ let name = prompt.question("Enter your preferred Username: ");
 
 console.log("\nWelcome " + name + "! Let's get started with the quiz :) \n");
 
-console.log("NOTE: You can't move on to the next level unless you answer three questions correctly, if not you will have to start over from the beginning.\n");
-
-console.log("Below are the list of levels.");
+let note = prompt.question("NOTE: You can't move on to the next level unless you answer three questions correctly, if not you will have to start over from the beginning. (Click Enter!!)\n");
 
 let levels = ["Food and Drinks","Film and TV","Art","Geography","Business"]
+console.log("Below are the list of levels.")
+console.log("1. " + levels[0]);
+console.log("2. " + levels[1]);
+console.log("3. " + levels[2]);
+console.log("4. " + levels[3]);
+console.log("5. " + levels[4]);
 
-console.log
 
 
 
@@ -47,4 +50,4 @@ let wronganswer = 0;
 
 
 
-console.log ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summery!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+console.log ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
