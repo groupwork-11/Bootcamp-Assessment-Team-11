@@ -15,12 +15,52 @@ let note = prompt.question("NOTE: You can't move on to the next level unless you
 
 let levels = ["Food and Drinks","Film and TV","Art","Geography","Business"]
 console.log("Below are the list of levels.")
-console.log("1. " + levels[0]);
-console.log("2. " + levels[1]);
-console.log("3. " + levels[2]);
-console.log("4. " + levels[3]);
-console.log("5. " + levels[4]);
+console.log("Level 1. " + levels[0]);
+console.log("Level 2. " + levels[1]);
+console.log("Level 3. " + levels[2]);
+console.log("Level 4. " + levels[3]);
+console.log("Level 5. " + levels[4]);
 
+console.log("\nYou are now starting Level 1: Food and Drinks!");
+console.log("You need too answer at least 3 questions correctly to move onto the next level.\n ")
+console.log("Question 1:")
+console.log("Which fruit is known for having a yellow peel?");
+console.log("1.Apple");
+console.log("2.Banana");
+console.log("3.Strawberry");
+console.log("4.Orange");
+
+let correctanswer = 0;
+let wronganswer = 0;
+
+let answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+
+console.log("\nYou are now starting Level 2: Film and TV!");
+console.log("You need too answer at least 3 questions")
+
+console.log("\nYou are now starting Level 3: Art!");
+console.log("You need too answer at least 3 questions")
+
+console.log("\nYou are now starting Level 4: Geography!");
+console.log("You need too answer at least 3 questions")
+
+console.log("\nYou are now starting Level 5: Business!");
+console.log("You need too answer at least 3 questions")
 
 
 
@@ -45,8 +85,7 @@ switch (levels) {
 
 let score = Number (prompt.question("Enter your score: "));
 let highscore = 5;
-let correctanswer = 0;
-let wronganswer = 0;
+
 
 
 
