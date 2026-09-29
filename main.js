@@ -15,7 +15,7 @@ console.log("NOTE: You can't move on to the next level unless you answer three q
 
 console.log("Below are the list of levels.");
 
-let levels = ["Food and Drinks","Film and TV","Art"]
+let levels = ["Food and Drinks","Film and TV","Art","Geography","Business"]
 
 console.log
 
@@ -23,17 +23,19 @@ console.log
 
 switch (levels) {
     case 1:
-        console.log("You have selected the category: Food and Drinks."); 
+        console.log("You have selected the levels: Food and Drinks."); 
         break;
     case 2:
-        console.log("You have selected the category: Film and TV.");
+        console.log("You have selected the levels: Film and TV.");
         break;
     case 3:
-        console.log("You have selected the sub category: Art.");
+        console.log("You have selected the sub levels: Art.");
+        break;
     case 4:
-        console.log("You have selected the sub category: Geography.");
+        console.log("You have selected the sub levels: Geography.");
+        break;
     case 5:
-        console.log("You have selected the sub category: Business.");
+        console.log("You have selected the sub levels: Business.");
         break;
     
 }
