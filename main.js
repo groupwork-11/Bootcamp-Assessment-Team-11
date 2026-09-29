@@ -59,17 +59,137 @@ console.log("\n You got "+ correctanswer + "questions correct!");
 if (correctanswer >=3){
     console.log("Well Done! You are moving onto the next level.");
 }
-else{console.log("You did not get enough questions correct");
+else{console.log("You did not get enough questions correct\n");
 }
 
 
 console.log("\nYou are now starting Level 2: Film and TV!");
 console.log("You need too answer at least 3 questions")
 
+//LEVEL 3:ART
 console.log("\nYou are now starting Level 3: Art!");
 console.log("You need too answer at least 3 questions")
 
 //LEVEL 4: GEOGRAPHY
+
+console.log("Question 1:")
+console.log("Who painted the Mona Lisa?");
+console.log("1.Vincent Van Gogh");
+console.log("2.Leonardo Da Vinci");
+console.log("3.Pablo Picasso");
+console.log("4.Claude Monet");
+
+answer =Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//-------------------------------------------------------------------------------------------
+console.log("Question 2:")
+console.log("What are the three primary colours in traditional art");
+console.log("1.Red,Blue and Yellow");
+console.log("2.Green,Purple and Orange");
+console.log("3.Red,Green and Blue;");
+console.log("4.Blue,Pink and Yellow");
+
+answer =Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//------------------------------------------------------------------------------------------------
+console.log("Question 3:")
+console.log("What is a sculpture");
+console.log("1.A type of painting");
+console.log("2.A three-dimensional artwork");
+console.log("3.A type of photography");
+console.log("4.A drawing made with ink");
+
+answer =Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//-----------------------------------------------------------------------------------------------------
+console.log("Question 4:")
+console.log("What material is commonly used for making sculptures");
+console.log("1.Marble");
+console.log("2.Charcoal");
+console.log("3.Paper Clips");
+console.log("4.Watercolour");
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//----------------------------------------------------------------------------------------------
+console.log("Question 5:")
+console.log("What is a landscape painting usually focused on");
+console.log("1.People and portraits");
+console.log("2.Buildings only");
+console.log("3.Natural scenery and surroundings");
+console.log("4.Abstract Shapes");
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 3) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//--------------------------------------------------------------------------------------------------
 console.log("\nYou are now starting Level 4: Geography!");
 console.log("You need too answer at least 3 questions")
 
@@ -249,6 +369,178 @@ else{console.log("You did not get enough questions correct");
 
 console.log("\nYou are now starting Level 5: Business!");
 console.log("You need too answer at least 3 questions")
+
+
+console.log("Question 1:")
+console.log("what pricing strataegies associate higth price with luxury?");
+console.log("1.Premium pricing");
+console.log("2.Psychological pricing");
+console.log("3.penetrataion Pricing");
+console.log("4.Cost plus");
+
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct\n");
+}
+
+console.log("Question 2:")
+console.log("The aim of every business is to?");
+console.log("1.To make profit");
+console.log("2.Gain new customers");
+console.log("3. Push competitors out of market");
+console.log("4.To dominate");
+
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct\n");
+}
+
+console.log("Question 3:")
+console.log("Elements of market mix include allo expect from one?");
+console.log("1.Product");
+console.log("2.Price");
+console.log("3.Place");
+console.log("4.President");
+
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 4) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct\n");
+}
+
+console.log("Question 4:")
+console.log("The followico mmng iinclude external source of fianace except:");
+console.log("1.Bank overdraft");
+console.log("2.Bank loan");
+console.log("3.Grant");
+console.log("4.savings");
+
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 4) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.\n");
+}
+else{console.log("You did not get enough questions correct\n");
+}
+
+console.log("Question 5:")
+console.log("Two companies coming together is known as ?");
+console.log("1.merger");
+console.log("2.Bank loan");
+console.log("3.Grant");
+console.log("4.savings");
+
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct");
+}
+
 
 
 
