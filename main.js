@@ -66,9 +66,129 @@ else{console.log("You did not get enough questions correct");
 console.log("\nYou are now starting Level 2: Film and TV!");
 console.log("You need too answer at least 3 questions")
 
+//LEVEL 3:ART
 console.log("\nYou are now starting Level 3: Art!");
 console.log("You need too answer at least 3 questions")
 
+
+console.log("Question 1:")
+console.log("Who painted the Mona Lisa?");
+console.log("1.Vincent Van Gogh");
+console.log("2.Leonardo Da Vinci");
+console.log("3.Pablo Picasso");
+console.log("4.Claude Monet");
+
+answer =Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//-------------------------------------------------------------------------------------------
+console.log("Question 2:")
+console.log("What are the three primary colours in traditional art");
+console.log("1.Red,Blue and Yellow");
+console.log("2.Green,Purple and Orange");
+console.log("3.Red,Green and Blue;");
+console.log("4.Blue,Pink and Yellow");
+
+answer =Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//------------------------------------------------------------------------------------------------
+console.log("Question 3:")
+console.log("What is a sculpture");
+console.log("1.A type of painting");
+console.log("2.A three-dimensional artwork");
+console.log("3.A type of photography");
+console.log("4.A drawing made with ink");
+
+answer =Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//-----------------------------------------------------------------------------------------------------
+console.log("Question 4:")
+console.log("What material is commonly used for making sculptures");
+console.log("1.Marble");
+console.log("2.Charcoal");
+console.log("3.Paper Clips");
+console.log("4.Watercolour");
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//----------------------------------------------------------------------------------------------
+console.log("Question 5:")
+console.log("What is a landscape painting usually focused on");
+console.log("1.People and portraits");
+console.log("2.Buildings only");
+console.log("3.Natural scenery and surroundings");
+console.log("4.Abstract Shapes");
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 3) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+//--------------------------------------------------------------------------------------------------
 console.log("\nYou are now starting Level 4: Geography!");
 console.log("You need too answer at least 3 questions")
 
