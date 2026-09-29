@@ -69,8 +69,183 @@ console.log("You need too answer at least 3 questions")
 console.log("\nYou are now starting Level 3: Art!");
 console.log("You need too answer at least 3 questions")
 
+//LEVEL 4: GEOGRAPHY
 console.log("\nYou are now starting Level 4: Geography!");
 console.log("You need too answer at least 3 questions")
+
+console.log("Question 1:")
+console.log("What is the longest river in the world?");
+console.log("1.Nile");
+console.log("2.Rhine");
+console.log("3.Mississippi");
+console.log("4.Amazon");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct");
+}
+
+
+console.log("Question 2:")
+console.log("How many colored rings dooes the Olympic flag have?");
+console.log("1.3");
+console.log("2.4");
+console.log("3.5");
+console.log("4.6");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 3) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct");
+}
+
+
+console.log("Question 3:")
+console.log("What is the capital city of Italy?");
+console.log("1.Rome");
+console.log("2.Milan");
+console.log("3.Venice");
+console.log("4.Naples");
+
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct");
+}
+
+
+console.log("Question 4:")
+console.log("What is the largest country in the world?");
+console.log("1.Canada");
+console.log("2.china");
+console.log("3.United States");
+console.log("4.Russia");
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 4) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct");
+}
+
+
+console.log("Question 5:")
+console.log("What is the capital city of canada?");
+console.log("1.Vancouver");
+console.log("2.Toronto");
+console.log("3.Ottawa");
+console.log("4.Montreal");
+
+
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 3) {
+    console.log("Correct!");
+    correctanswer++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct");
+}
 
 console.log("\nYou are now starting Level 5: Business!");
 console.log("You need too answer at least 3 questions")
