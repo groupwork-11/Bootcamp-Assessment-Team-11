@@ -9,6 +9,9 @@ console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Let's Get Sta
 
 let name = prompt.question("Enter your preferred Username: ");
 
+let correctanswer = 0;
+let wronganswer = 0;
+
 console.log("\nWelcome " + name + "! Let's get started with the quiz :) \n");
 
 let note = prompt.question("NOTE: You can't move on to the next level unless you answer three questions correctly, if not you will have to start over from the beginning. (Click Enter!!)\n");
@@ -21,6 +24,7 @@ console.log("Level 3. " + levels[2]);
 console.log("Level 4. " + levels[3]);
 console.log("Level 5. " + levels[4]);
 
+
 console.log("\nYou are now starting Level 1: Food and Drinks!");
 console.log("You need too answer at least 3 questions correctly to move onto the next level.\n ")
 console.log("Question 1:")
@@ -30,8 +34,7 @@ console.log("2.Banana");
 console.log("3.Strawberry");
 console.log("4.Orange");
 
-let correctanswer = 0;
-let wronganswer = 0;
+
 
 let answer = Number(prompt.question("Enter your answer: "));
 while (answer < 1 || answer > 4) {
@@ -47,6 +50,16 @@ if (answer == 2) {
 else {
     console.log("Wrong!");
     wronganswer++;
+}
+
+
+//AFTER QUESTION IS ANSWERED
+console.log("\n You got "+ correctanswer + "questions correct!");
+
+if (correctanswer >=3){
+    console.log("Well Done! You are moving onto the next level.");
+}
+else{console.log("You did not get enough questions correct");
 }
 
 
