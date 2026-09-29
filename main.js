@@ -179,7 +179,7 @@ else{console.log("You did not get enough questions correct\n");
 }
 
 console.log("Question 4:")
-console.log("The followi8ng iinclude external source of fianace except:");
+console.log("The followico mmng iinclude external source of fianace except:");
 console.log("1.Bank overdraft");
 console.log("2.Bank loan");
 console.log("3.Grant");
