@@ -13,14 +13,14 @@ console.log("\nWelcome " + name + "! Let's get started with the quiz :) \n");
 
 console.log("NOTE: You can't move on to the next level unless you answer three questions correctly, if not you will have to start over from the beginning.\n");
 
-let categories = Number(prompt.question("Below are the list of categories."));
+let categories = Number(prompt.question("Below are the list of categories.(Click Enter!!)"));
 
 console.log("1. Food and Drinks");
 console.log("2. Film and TV");
 console.log("3. Education");
-console.log("   a. Art");
-console.log("   b. Geography");
-console.log("   c. Business");
+console.log("   - Art");
+console.log("   - Geography");
+console.log("   - Business\n");
 
 switch (categories) {
     case 1:
