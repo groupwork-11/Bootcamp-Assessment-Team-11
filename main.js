@@ -136,7 +136,7 @@ else {
 
 //---------------------------------------------5----------------------------------------------------
 console.log("\nQuestion 5:")
-console.log("Which of the following is a popular fast food chain?");
+console.log("Which of the following is the most popular fast food chain?");
 console.log("1.KFC");
 console.log("2.McDonald's");
 console.log("3.Burger King");
@@ -190,8 +190,6 @@ else if (choice.toLowerCase() === "next level") {
 else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
 }
-
-
 
 
 //LEVEL 2: FILM AND TV
