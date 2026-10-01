@@ -1,4 +1,5 @@
 const prompt = require ("readline-sync");
+const Highscore = 5 
 
 console.log ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Welcome to ThinkFast!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
@@ -11,6 +12,7 @@ let name = prompt.question("Enter your preferred Username: ");
 
 let correctanswer = 0;
 let wronganswer = 0;
+let score = 0;
 
 
 console.log("\nWelcome " + name + "! Let's get started with the quiz :) \n");
@@ -47,7 +49,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 2) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;
+    score++;    
 }
 
 else {
@@ -55,6 +58,106 @@ else {
     wronganswer++;
 }
 
+//---------------------------------------------2----------------------------------------------------
+console.log("\nQuestion 2:")
+console.log("Which beverage is made from roasted coffee beans?");
+console.log("1.Tea");
+console.log("2.Coffee");
+console.log("3.Juice");
+console.log("4.Water");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++; 
+    score++;  
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+
+//---------------------------------------------3----------------------------------------------------
+console.log("\nQuestion 3:")
+console.log("Where does Pizza originate from?");
+console.log("1.Germany");
+console.log("2.France");
+console.log("3.Italy");
+console.log("4.Canada");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 3) {
+    console.log("Correct!");
+    correctanswer++;
+    score++;    
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//---------------------------------------------4----------------------------------------------------
+console.log("\nQuestion 4:")
+console.log("Where does Cassava flakes originate from?");
+console.log("1.Nigeria");
+console.log("2.Ghana");
+console.log("3.South Africa");
+console.log("4.Cameroon");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+    score++; 
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//---------------------------------------------5----------------------------------------------------
+console.log("\nQuestion 5:")
+console.log("Which of the following is the most popular fast food chain?");
+console.log("1.KFC");
+console.log("2.McDonald's");
+console.log("3.Burger King");
+console.log("4.Taco Bell");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++; 
+    score++;   
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
 
 //AFTER QUESTION IS ANSWERED
 console.log("\n You got "+ correctanswer + "questions correct!");
@@ -73,6 +176,13 @@ while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next lev
 }
 if (choice.toLowerCase() === "end game") {
     console.log("\nGame Over. Well Done !");
+    console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log("Username: " + name);
+    console.log("Total Questions Answered: " + (correctanswer + wronganswer));
+    console.log("Correct Answers: " + correctanswer);
+    console.log("Wrong Answers: " + wronganswer);
+    console.log("Score: " + score + " /5");
+    process.exit(0);
 }
 else if (choice.toLowerCase() === "next level") {
     console.log("\nYou have chosen to continue to the next level. Good luck!");
@@ -82,23 +192,134 @@ else {
 }
 
 
-
-
 //LEVEL 2: FILM AND TV
 console.log("\nYou are now starting Level 2: Film and TV!");
 console.log("You need too answer at least 3 questions")
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+console.log("\nQuestion 1:")
+console.log("In Stranger Things, What is Eleven's favortive snack?");
+console.log("1.Pizza");
+console.log("2.Waffles");
+console.log("3.Ice Cream");
+console.log("4.Pancakes");
 
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
 
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++;   
+    score++;
+}
 
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
 
-// TO BE FILLED IN WITH QUESTIONS AND ANSWERS FOR LEVEL 2: FILM AND TV
+//--------------------------------------------2-----------------------------------------------
+console.log("\nQuestion 2:")
+console.log("In Lion King, What is the name of Simba's father?");
+console.log("1.Rafiki");
+console.log("2.Timon");
+console.log("3.Mufasa");
+console.log("4.Banzai");
 
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
 
+if (answer == 3) {
+    console.log("Correct!");
+    correctanswer++;   
+    score++;
+}
 
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
 
+//----------------------------------------3--------------------------------------------------------
+console.log("\nQuestion 3:")
+console.log("In Wednesday, what is the name of Wednesday Addam's disembodied hand?");
+console.log("1.Handley");
+console.log("2.Shadow");
+console.log("3.Fingers");
+console.log("4.Thing");
 
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
 
+if (answer == 4) {
+    console.log("Correct!");
+    correctanswer++;   
+    score++;
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//-------------------------------------------4----------------------------------------------------------
+console.log("\nQuestion 4:")
+console.log("In the movie Frozen, what is the name of the snowman?");
+console.log("1.Olaf");
+console.log("2.Snowy");
+console.log("3.Frosty");
+console.log("4.Snowball");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 1) {
+    console.log("Correct!");
+    correctanswer++;   
+    score++;
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
+
+//---------------------------------------------5-------------------------------------------------
+console.log("\nQuestion 5:")
+console.log("In Moana, what is the name of the chicken?");
+console.log("1.Tui");
+console.log("2.Heihei");
+console.log("3.Maui");
+console.log("4.Pua");
+
+answer = Number(prompt.question("Enter your answer: "));
+while (answer < 1 || answer > 4) {
+    console.log("Please enter a number between 1 and 4.");
+    answer= Number(prompt.question("Please enter your Answer:"));
+}
+
+if (answer == 2) {
+    console.log("Correct!");
+    correctanswer++;   
+    score++;
+}
+
+else {
+    console.log("Wrong!");
+    wronganswer++;
+}
 
 //AFTER QUESTION IS ANSWERED
 console.log("\n You got "+ correctanswer + "questions correct!");
@@ -117,6 +338,13 @@ while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next lev
 }
 if (choice.toLowerCase() === "end game") {
     console.log("\nGame Over. Well Done !");
+    console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log("Username: " + name);
+    console.log("Total Questions Answered: " + (correctanswer + wronganswer));
+    console.log("Correct Answers: " + correctanswer);
+    console.log("Wrong Answers: " + wronganswer);
+    console.log("Score: " + score + " /5");
+    process.exit(0);
 }
 else if (choice.toLowerCase() === "next level") {
     console.log("\nYou have chosen to continue to the next level. Good luck!");
@@ -146,7 +374,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 2) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;  
+    score++;  
 }
 
 else {
@@ -170,7 +399,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 1) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;  
+    score++;  
 }
 
 else {
@@ -194,7 +424,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 2) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;
+    score++;    
 }
 
 else {
@@ -218,7 +449,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 1) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;
+    score++;    
 }
 
 else {
@@ -243,7 +475,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 3) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++; 
+    score++;   
 }
 
 else {
@@ -268,6 +501,13 @@ while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next lev
 }
 if (choice.toLowerCase() === "end game") {
     console.log("\nGame Over. Well Done !");
+    console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log("Username: " + name);
+    console.log("Total Questions Answered: " + (correctanswer + wronganswer));
+    console.log("Correct Answers: " + correctanswer);
+    console.log("Wrong Answers: " + wronganswer);
+    console.log("Score: " + score + " /5");
+    process.exit(0);
 }
 else if (choice.toLowerCase() === "next level") {
     console.log("\nYou have chosen to continue to the next level. Good luck!");
@@ -298,7 +538,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 1) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++; 
+    score++;   
 }
 
 else {
@@ -322,7 +563,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 3) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;
+    score++;    
 }
 
 else {
@@ -348,7 +590,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 1) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++; 
+    score++;   
 }
 
 else {
@@ -373,7 +616,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 4) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++; 
+    score++;   
 }
 
 else {
@@ -399,7 +643,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 3) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++; 
+    score++;   
 }
 
 else {
@@ -425,6 +670,13 @@ while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next lev
 }
 if (choice.toLowerCase() === "end game") {
     console.log("\nGame Over. Well Done !");
+    console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log("Username: " + name);
+    console.log("Total Questions Answered: " + (correctanswer + wronganswer));
+    console.log("Correct Answers: " + correctanswer);
+    console.log("Wrong Answers: " + wronganswer);
+    console.log("Score: " + score + " /5");
+    process.exit(0);
 }
 else if (choice.toLowerCase() === "next level") {
     console.log("\nYou have chosen to continue to the next level. Good luck!");
@@ -457,7 +709,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 1) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;
+    score++;    
 }
 
 else {
@@ -483,7 +736,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 1) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++; 
+    score++;   
 }
 
 else {
@@ -509,8 +763,10 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 4) {
     console.log("Correct!");
-    correctanswer++;   
-}
+    correctanswer++;  
+    score++;  
+} 
+
 
 else {
     console.log("Wrong!");
@@ -535,7 +791,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 4) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++;
+    score++;   
 }
 
 else {
@@ -561,7 +818,8 @@ while (answer < 1 || answer > 4) {
 
 if (answer == 1) {
     console.log("Correct!");
-    correctanswer++;   
+    correctanswer++; 
+    score++;  
 }
 
 else {
@@ -586,6 +844,13 @@ while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next lev
 }
 if (choice.toLowerCase() === "end game") {
     console.log("\nGame Over. Well Done !");
+    console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log("Username: " + name);
+    console.log("Total Questions Answered: " + (correctanswer + wronganswer));
+    console.log("Correct Answers: " + correctanswer);
+    console.log("Wrong Answers: " + wronganswer);
+    console.log("Score: " + score + " /5");
+    process.exit(0);
 }
 else if (choice.toLowerCase() === "next level") {
     console.log("\nYou have chosen to continue to the next level. Good luck!");
@@ -593,8 +858,6 @@ else if (choice.toLowerCase() === "next level") {
 else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
 }
-
-
 
 switch (levels) {
     case 1:
@@ -612,19 +875,5 @@ switch (levels) {
     case 5:
         console.log("You have selected the sub levels: Business.");
         break;
-    
 }
 
-let score = Number (prompt.question("Enter your score: "));
-let highscore = 5;
-
-
-
-
-console.log ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-console.log("Username: " + name);
-console.log("Total Questions Answered: " + (correctanswer + wronganswer));
-console.log("Correct Answers: " + correctanswer);
-console.log("Wrong Answers: " + wronganswer);
-console.log("Score: " + score);
-console.log("High Score: " + highscore);
