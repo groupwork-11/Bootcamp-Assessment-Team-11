@@ -177,12 +177,16 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+    console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
 
 //AFTER LEVEL IS COMPLETED
+if (correctanswer >=3){
+    console.log("Well Done! You got at least 3 questions correct!\n.");
+}
 let choice = prompt.question("Do you want to end game or continue unto Next Level? (End Game/Next Level): ");
 while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next level") {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
@@ -203,6 +207,9 @@ else if (choice.toLowerCase() === "next level") {
 }
 else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
+    console.log("You did not get enough questions correct");
+    console.log("You need to get at least 3 questions correct to continue.");
+    console.log("Game Over.\n");
 }
 
 break;
@@ -345,8 +352,8 @@ else {
 //AFTER QUESTION IS ANSWERED
 console.log("\n You got "+ correctanswer + "questions correct!");
 
-if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+if (correctanswer >=3)  {console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -516,12 +523,16 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
 
 //AFTER LEVEL IS COMPLETED
+if (correctanswer >=3){
+    console.log("Well Done! You got at least 3 questions correct!\n.");
+}
 choice = prompt.question("Do you want to end game or continue unto Next Level? (End Game/Next Level): ");
 while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next level") {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
@@ -542,6 +553,9 @@ else if (choice.toLowerCase() === "next level") {
 }
 else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
+    console.log("You did not get enough questions correct");
+    console.log("You need to get at least 3 questions correct to continue.");
+    console.log("Game Over.\n");
 }
 
 break;
@@ -691,7 +705,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -871,7 +886,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
