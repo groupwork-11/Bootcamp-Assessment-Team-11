@@ -136,7 +136,7 @@ else {
 
 //---------------------------------------------5----------------------------------------------------
 console.log("\nQuestion 5:")
-console.log("Which of the following is a popular fast food chain?");
+console.log("Which of the following is the most popular fast food chain?");
 console.log("1.KFC");
 console.log("2.McDonald's");
 console.log("3.Burger King");
@@ -163,7 +163,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+    console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -196,8 +197,6 @@ else {
     console.log("You need to get at least 3 questions correct to continue.");
     console.log("Game Over.\n");
 }
-
-
 
 
 //LEVEL 2: FILM AND TV
@@ -332,8 +331,8 @@ else {
 //AFTER QUESTION IS ANSWERED
 console.log("\n You got "+ correctanswer + "questions correct!");
 
-if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+if (correctanswer >=3)  {console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -496,7 +495,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -672,7 +672,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -846,7 +847,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
