@@ -12,6 +12,7 @@ let name = prompt.question("Enter your preferred Username: ");
 
 let correctanswer = 0;
 let wronganswer = 0;
+let levelcorrect = 0;
 let score = 0;
 
 
@@ -27,6 +28,14 @@ console.log("Level 3. " + levels[2]);
 console.log("Level 4. " + levels[3]);
 console.log("Level 5. " + levels[4]);
 
+let selectedlevel = Number (prompt.question("\nWhich level would you like to play?: \n"));
+while (selectedlevel < 1 || selectedlevel > 5) {
+    console.log ("Invalid input. Please choose a level between 1 to 5\n");
+    selectedlevel = Number (prompt.question("Which level would you like to play?: \n")); 
+}
+
+switch (selectedlevel) {
+    case 1:
 //level 1: Food and Drinks
 console.log("\nYou are now starting Level 1: Food and Drinks!");
 console.log("You need too answer at least 3 questions correctly to move onto the next level.\n ")
@@ -50,7 +59,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 2) {
     console.log("Correct!");
     correctanswer++;
-    score++;    
+    score++;  
+    levelcorrect++;  
 }
 
 else {
@@ -75,7 +85,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 2) {
     console.log("Correct!");
     correctanswer++; 
-    score++;  
+    score++; 
+    levelcorrect++;  
 }
 
 else {
@@ -102,6 +113,7 @@ if (answer == 3) {
     console.log("Correct!");
     correctanswer++;
     score++;    
+    levelcorrect++; 
 }
 
 else {
@@ -127,6 +139,7 @@ if (answer == 1) {
     console.log("Correct!");
     correctanswer++;   
     score++; 
+    levelcorrect++; 
 }
 
 else {
@@ -152,6 +165,7 @@ if (answer == 2) {
     console.log("Correct!");
     correctanswer++; 
     score++;   
+    levelcorrect++; 
 }
 
 else {
@@ -191,7 +205,9 @@ else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
 }
 
+break;
 
+case 2:
 //LEVEL 2: FILM AND TV
 console.log("\nYou are now starting Level 2: Film and TV!");
 console.log("You need too answer at least 3 questions")
@@ -214,6 +230,7 @@ if (answer == 2) {
     console.log("Correct!");
     correctanswer++;   
     score++;
+    levelcorrect++; 
 }
 
 else {
@@ -239,6 +256,7 @@ if (answer == 3) {
     console.log("Correct!");
     correctanswer++;   
     score++;
+    levelcorrect++; 
 }
 
 else {
@@ -264,6 +282,7 @@ if (answer == 4) {
     console.log("Correct!");
     correctanswer++;   
     score++;
+    levelcorrect++; 
 }
 
 else {
@@ -289,6 +308,7 @@ if (answer == 1) {
     console.log("Correct!");
     correctanswer++;   
     score++;
+    levelcorrect++; 
 }
 
 else {
@@ -314,6 +334,7 @@ if (answer == 2) {
     console.log("Correct!");
     correctanswer++;   
     score++;
+    levelcorrect++; 
 }
 
 else {
@@ -353,7 +374,9 @@ else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
 }
 
+break;
 
+case 3:
 //LEVEL 3:ART
 console.log("\nYou are now starting Level 3: Art!");
 console.log("You need too answer at least 3 questions")
@@ -376,6 +399,7 @@ if (answer == 2) {
     console.log("Correct!");
     correctanswer++;  
     score++;  
+    levelcorrect++; 
 }
 
 else {
@@ -400,7 +424,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 1) {
     console.log("Correct!");
     correctanswer++;  
-    score++;  
+    score++; 
+    levelcorrect++;  
 }
 
 else {
@@ -426,6 +451,7 @@ if (answer == 2) {
     console.log("Correct!");
     correctanswer++;
     score++;    
+    levelcorrect++; 
 }
 
 else {
@@ -450,7 +476,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 1) {
     console.log("Correct!");
     correctanswer++;
-    score++;    
+    score++; 
+    levelcorrect++;    
 }
 
 else {
@@ -476,7 +503,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 3) {
     console.log("Correct!");
     correctanswer++; 
-    score++;   
+    score++;
+    levelcorrect++;    
 }
 
 else {
@@ -516,8 +544,9 @@ else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
 }
 
+break;
 
-
+case 4:
 //level 4: Geography
 console.log("\nYou are now starting Level 4: Geography!");
 console.log("You need too answer at least 3 questions")
@@ -540,6 +569,7 @@ if (answer == 1) {
     console.log("Correct!");
     correctanswer++; 
     score++;   
+    levelcorrect++; 
 }
 
 else {
@@ -564,7 +594,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 3) {
     console.log("Correct!");
     correctanswer++;
-    score++;    
+    score++;  
+    levelcorrect++;   
 }
 
 else {
@@ -592,6 +623,7 @@ if (answer == 1) {
     console.log("Correct!");
     correctanswer++; 
     score++;   
+    levelcorrect++; 
 }
 
 else {
@@ -617,7 +649,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 4) {
     console.log("Correct!");
     correctanswer++; 
-    score++;   
+    score++;  
+    levelcorrect++;  
 }
 
 else {
@@ -644,7 +677,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 3) {
     console.log("Correct!");
     correctanswer++; 
-    score++;   
+    score++;  
+    levelcorrect++;  
 }
 
 else {
@@ -685,8 +719,9 @@ else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
 }
 
+break;
 
-
+case 5:
 //level 5: Business
 console.log("\nYou are now starting Level 5: Business!");
 console.log("You need too answer at least 3 questions")
@@ -710,7 +745,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 1) {
     console.log("Correct!");
     correctanswer++;
-    score++;    
+    score++; 
+    levelcorrect++;    
 }
 
 else {
@@ -737,7 +773,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 1) {
     console.log("Correct!");
     correctanswer++; 
-    score++;   
+    score++; 
+    levelcorrect++;  
 }
 
 else {
@@ -765,6 +802,7 @@ if (answer == 4) {
     console.log("Correct!");
     correctanswer++;  
     score++;  
+    levelcorrect++; 
 } 
 
 
@@ -792,7 +830,8 @@ while (answer < 1 || answer > 4) {
 if (answer == 4) {
     console.log("Correct!");
     correctanswer++;
-    score++;   
+    score++; 
+    levelcorrect++;   
 }
 
 else {
@@ -820,6 +859,7 @@ if (answer == 1) {
     console.log("Correct!");
     correctanswer++; 
     score++;  
+    levelcorrect++; 
 }
 
 else {
@@ -859,21 +899,11 @@ else {
     console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
 }
 
-switch (levels) {
-    case 1:
-        console.log("You have selected the levels: Food and Drinks."); 
-        break;
-    case 2:
-        console.log("You have selected the levels: Film and TV.");
-        break;
-    case 3:
-        console.log("You have selected the sub levels: Art.");
-        break;
-    case 4:
-        console.log("You have selected the sub levels: Geography.");
-        break;
-    case 5:
-        console.log("You have selected the sub levels: Business.");
-        break;
+break;
 }
+
+
+  
+
+
 
