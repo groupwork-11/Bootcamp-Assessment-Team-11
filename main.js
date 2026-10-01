@@ -163,7 +163,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+    console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -326,8 +327,8 @@ else {
 //AFTER QUESTION IS ANSWERED
 console.log("\n You got "+ correctanswer + "questions correct!");
 
-if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+if (correctanswer >=3)  {console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -490,7 +491,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -659,7 +661,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
@@ -833,7 +836,8 @@ else {
 console.log("\n You got "+ correctanswer + "questions correct!");
 
 if (correctanswer >=3){
-    console.log("Well Done! Would you like to move onto the next level or End Game?\n.");
+     console.log("Well Done! You have gotten 3 or more questions right!")
+            ("Would you like to move onto the next level or End Game?\n.");
 }
 else{console.log("You did not get enough questions correct\n");
 }
