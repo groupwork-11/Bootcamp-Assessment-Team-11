@@ -13,6 +13,7 @@ let name = prompt.question("Enter your preferred Username: ");
 let correctanswer = 0;
 let wronganswer = 0;
 let levelcorrect = 0;
+let completedlevels = 0;
 let score = 0;
 let answer;
 let choice;
@@ -214,7 +215,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
 
@@ -257,7 +258,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
     //IF PLAYER WANTS TO RETRY
@@ -462,7 +463,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
 
@@ -505,7 +506,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
     //IF PLAYER WANTS TO RETRY
@@ -697,7 +698,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
 
@@ -740,7 +741,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
     //IF PLAYER WANTS TO RETRY
@@ -927,7 +928,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
 
@@ -970,7 +971,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
     //IF PLAYER WANTS TO RETRY
@@ -991,7 +992,6 @@ switch (selectedlevel)
     }
     
     break;
-
 
     case 5:
     //level 5: Business
@@ -1056,7 +1056,7 @@ switch (selectedlevel)
 
     //---------------------------------------3---------------------------------------------------------
     console.log("\nQuestion 3:")
-    console.log("Elements of market mix include allo expect from one?");
+    console.log("Elements of market mix include all except from one?");
     console.log("1.Product");
     console.log("2.Price");
     console.log("3.Place");
@@ -1085,7 +1085,7 @@ switch (selectedlevel)
 
     //------------------------------------------------4------------------------------------------------
     console.log("\nQuestion 4:")
-    console.log("The followico mmng iinclude external source of fianace except:");
+    console.log("The following include external source of finance except:");
     console.log("1.Bank overdraft");
     console.log("2.Bank loan");
     console.log("3.Grant");
@@ -1163,7 +1163,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
 
@@ -1206,7 +1206,7 @@ switch (selectedlevel)
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " / 5");
+        console.log("Score: " + score + " ");
         process.exit(0);
     }
     //IF PLAYER WANTS TO RETRY
