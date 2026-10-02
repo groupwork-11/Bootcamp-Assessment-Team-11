@@ -14,6 +14,9 @@ let correctanswer = 0;
 let wronganswer = 0;
 let levelcorrect = 0;
 let score = 0;
+let answer;
+let choice;
+let retry;
 
 
 console.log("\nWelcome " + name + "! Let's get started with the quiz :) \n");
@@ -33,8 +36,11 @@ while (selectedlevel < 1 || selectedlevel > 5) {
     console.log ("Invalid input. Please choose a level between 1 to 5\n");
     selectedlevel = Number (prompt.question("Which level would you like to play?: \n")); 
 }
+
 let gamerunning = true;
+
 while (gamerunning)
+
 {
 switch (selectedlevel) 
 {
@@ -51,7 +57,7 @@ switch (selectedlevel)
     console.log("3.Strawberry");
     console.log("4.Orange");
 
-    let answer = Number(prompt.question("Enter your answer: "));
+    answer = Number(prompt.question("Enter your answer: "));
     while (answer < 1 || answer > 4) 
     {
         console.log("Please enter a number between 1 and 4.");
@@ -184,9 +190,6 @@ switch (selectedlevel)
     else{console.log("You did not get enough questions correct\n");
     }
 
-    let choice;
-    let retry;
-
     //AFTER LEVEL IS COMPLETED
     if (correctanswer >=3)
     {
@@ -281,6 +284,9 @@ switch (selectedlevel)
     console.log("\nYou are now starting Level 2: Film and TV!");
     console.log("You need too answer at least 3 questions");
 
+    levelcorrect = 0;
+    let levelwrong = 0;
+
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     console.log("\nQuestion 1:");
     console.log("In Stranger Things, What is Eleven's favortive snack?");
@@ -290,25 +296,27 @@ switch (selectedlevel)
     console.log("4.Pancakes");
 
     answer = Number(prompt.question("Enter your answer: "));
-    while (answer < 1 || answer > 4) {
+    while (answer < 1 || answer > 4) 
+    {
         console.log("Please enter a number between 1 and 4.");
-        answer= Number(prompt.question("Please enter your Answer:"));
+        answer = Number(prompt.question("Please enter your Answer:"));
     }
 
     if (answer == 2) {
         console.log("Correct!");
-        correctanswer++;   
-        score++;
+        correctanswer++;
+        score++;  
         levelcorrect++; 
     }
 
     else {
         console.log("Wrong!");
         wronganswer++;
+        levelwrong; 
     }
 
     //--------------------------------------------2-----------------------------------------------
-    console.log("\nQuestion 2:")
+    console.log("\nQuestion 2:");
     console.log("In Lion King, What is the name of Simba's father?");
     console.log("1.Rafiki");
     console.log("2.Timon");
@@ -331,10 +339,11 @@ switch (selectedlevel)
     else {
         console.log("Wrong!");
         wronganswer++;
+         levelwrong; 
     }
 
     //----------------------------------------3--------------------------------------------------------
-    console.log("\nQuestion 3:")
+    console.log("\nQuestion 3:");
     console.log("In Wednesday, what is the name of Wednesday Addam's disembodied hand?");
     console.log("1.Handley");
     console.log("2.Shadow");
@@ -357,10 +366,11 @@ switch (selectedlevel)
     else {
         console.log("Wrong!");
         wronganswer++;
+         levelwrong; 
     }
 
     //-------------------------------------------4----------------------------------------------------------
-    console.log("\nQuestion 4:")
+    console.log("\nQuestion 4:");
     console.log("In the movie Frozen, what is the name of the snowman?");
     console.log("1.Olaf");
     console.log("2.Snowy");
@@ -383,10 +393,11 @@ switch (selectedlevel)
     else {
         console.log("Wrong!");
         wronganswer++;
+         levelwrong; 
     }
 
     //---------------------------------------------5-------------------------------------------------
-    console.log("\nQuestion 5:")
+    console.log("\nQuestion 5:");
     console.log("In Moana, what is the name of the chicken?");
     console.log("1.Tui");
     console.log("2.Heihei");
@@ -396,7 +407,7 @@ switch (selectedlevel)
     answer = Number(prompt.question("Enter your answer: "));
     while (answer < 1 || answer > 4) {
         console.log("Please enter a number between 1 and 4.");
-        answer= Number(prompt.question("Please enter your Answer:"));
+        answer = Number(prompt.question("Please enter your Answer:"));
     }
 
     if (answer == 2) {
@@ -409,40 +420,111 @@ switch (selectedlevel)
     else {
         console.log("Wrong!");
         wronganswer++;
+         levelwrong; 
     }
 
-    //AFTER QUESTION IS ANSWERED
+        //AFTER QUESTION IS ANSWERED
+    correctanswer += levelcorrect;
+    wronganswer += levelwrong;
+    score += levelcorrect;
+
+
     console.log("\n You got "+ correctanswer + "questions correct!");
 
-    if (correctanswer >=3)  {console.log("Well Done! You have gotten 3 or more questions right!")
-                console.log("Would you like to move onto the next level or End Game?\n.");
+    if (levelcorrect >=3){
+        console.log("Well Done! You have gotten 3 or more questions right!");
+        console.log("Would you like to move onto the next level or End Game?\n.");
     }
-    else {console.log("You did not get enough questions correct\n");
+    else{console.log("You did not get enough questions correct\n");
     }
 
     //AFTER LEVEL IS COMPLETED
-    choice = prompt.question("Do you want to end game or continue unto Next Level? (End Game/Next Level): ");
-    while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next level") {
+    if (correctanswer >=3)
+    {
+        console.log("Well Done! You got at least 3 questions correct!\n.");
+
+        choice = prompt.question("Do you want to end game or continue unto Next Level?: ");
+
+        while (choice.toLowerCase() !== "end game" && 
+               choice.toLowerCase() !== "next level") 
+        {
         console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
-        choice = prompt.question("Do you want to end game or continue unto Next Level? (End Game/Next Level): ");
-    }
-    if (choice.toLowerCase() === "end game") {
+        choice = prompt.question("Try Again: ");
+        }
+    
+
+    //PLAYER WANTS TO END GAME.
+    if (choice.toLowerCase() === "end game") 
+    {
         console.log("\nGame Over. Well Done !");
         console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         console.log("Username: " + name);
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " /5");
+        console.log("Score: " + score + " / 5");
         process.exit(0);
     }
-    else if (choice.toLowerCase() === "next level") {
-        console.log("\nYou have chosen to continue to the next level. Good luck!");
+
+    //PLAYER WANTS TO CONTINUE TO NEXT LEVEL.
+    else if (choice.toLowerCase() === "next level") 
+    {
+        console.log("\nYou can now choose which level you want to proceed to. Good luck!");
+        let levelchoice = Number(prompt.question("choose level (1-5): "));
+
+        while (levelchoice < 1 || levelchoice > 5 || isNaN(levelchoice)) {
+            console.log("\nInvalid input. Please choose a level between 1 to 5.");
+            levelchoice = Number(prompt.question("choose level (1-5): "));
+        }
+
+        console.log("\nYou have chosen Level " + levelchoice + ": ");
+        selectedlevel = levelchoice;
     }
-    else {
-        console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
     }
 
+     //IF PLAYER DOES NOT GET 3 QUESTIONS CORRECTLY .
+     else 
+    {
+        console.log("\nYou did not get enough questions correct");
+        console.log("Sorry you cannot move onto the next level.");
+
+     retry = prompt.question("Do you want to retry Level or End Game?: ");
+
+        while (retry.toLowerCase() !== "retry" && 
+        retry.toLowerCase() !== "end game") {
+            console.log("Invalid input. Please enter 'Retry' or 'End Game'.");
+            retry = prompt.question("Try Again: ");
+        }
+       
+    //IF PLAYER WANTS TO END GAME
+    if (retry && retry.toLowerCase() === "end game") 
+    {
+        console.log("\nGame Over. Well Done !");
+        console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        console.log("Username: " + name);
+        console.log("Total Questions Answered: " + (correctanswer + wronganswer));
+        console.log("Correct Answers: " + correctanswer);
+        console.log("Wrong Answers: " + wronganswer);
+        console.log("Score: " + score + " / 5");
+        process.exit(0);
+    }
+    //IF PLAYER WANTS TO RETRY
+    else
+    {
+        console.log("\nYou have chosen to start this level again. Good luck!");
+    
+     // this resets the level variables so that the player can start over.
+        correctanswer = 0;
+        wronganswer = 0;
+        levelcorrect = 0;
+        score = 0;
+        
+     // THIS ALLOWS THE CODE TO RESTART THE LEVEL WITHOUT EXITING THE LOOP.
+     continue;
+     
+    }
+    }
+    
     break;
 
     case 3:
@@ -585,41 +667,99 @@ switch (selectedlevel)
     console.log("\n You got "+ correctanswer + "questions correct!");
 
     if (correctanswer >=3){
-        console.log("Well Done! You have gotten 3 or more questions right!")
-                ("Would you like to move onto the next level or End Game?\n.");
+        console.log("Well Done! You have gotten 3 or more questions right!");
+        console.log("Would you like to move onto the next level or End Game?\n.");
     }
     else{console.log("You did not get enough questions correct\n");
     }
 
     //AFTER LEVEL IS COMPLETED
-    if (correctanswer >=3){
+    if (correctanswer >=3)
+    {
         console.log("Well Done! You got at least 3 questions correct!\n.");
-    }
-    choice = prompt.question("Do you want to end game or continue unto Next Level? (End Game/Next Level): ");
-    while (choice.toLowerCase() !== "end game" && choice.toLowerCase() !== "next level") {
+
+        choice = prompt.question("Do you want to end game or continue unto Next Level?: ");
+
+        while (choice.toLowerCase() !== "end game" && 
+               choice.toLowerCase() !== "next level") 
+        {
         console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
-        choice = prompt.question("Do you want to end game or continue unto Next Level? (End Game/Next Level): ");
-    }
-    if (choice.toLowerCase() === "end game") {
+        choice = prompt.question("Try Again: ");
+        }
+    
+
+    //PLAYER WANTS TO END GAME.
+    if (choice.toLowerCase() === "end game") 
+    {
         console.log("\nGame Over. Well Done !");
         console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         console.log("Username: " + name);
         console.log("Total Questions Answered: " + (correctanswer + wronganswer));
         console.log("Correct Answers: " + correctanswer);
         console.log("Wrong Answers: " + wronganswer);
-        console.log("Score: " + score + " /5");
+        console.log("Score: " + score + " / 5");
         process.exit(0);
     }
-    else if (choice.toLowerCase() === "next level") {
-        console.log("\nYou have chosen to continue to the next level. Good luck!");
+
+    //PLAYER WANTS TO CONTINUE TO NEXT LEVEL.
+    else if (choice.toLowerCase() === "next level") 
+    {
+        console.log("\nYou can now choose which level you want to proceed to. Good luck!");
+        let levelchoice = Number(prompt.question("choose level (1-5): "));
+
+        while (levelchoice < 1 || levelchoice > 5 || isNaN(levelchoice)) {
+            console.log("\nInvalid input. Please choose a level between 1 to 5.");
+            levelchoice = Number(prompt.question("choose level (1-5): "));
+        }
+
+        console.log("\nYou have chosen Level " + levelchoice + ": ");
+        selectedlevel = levelchoice;
     }
-    else {
-        console.log("Invalid input. Please enter 'End Game' or 'Next Level'.");
-        console.log("You did not get enough questions correct");
-        console.log("You need to get at least 3 questions correct to continue.");
-        console.log("Game Over.\n");
     }
 
+     //IF PLAYER DOES NOT GET 3 QUESTIONS CORRECTLY .
+     else 
+    {
+        console.log("\nYou did not get enough questions correct");
+        console.log("Sorry you cannot move onto the next level.");
+
+     retry = prompt.question("Do you want to retry Level or End Game?: ");
+
+        while (retry.toLowerCase() !== "retry" && 
+        retry.toLowerCase() !== "end game") {
+            console.log("Invalid input. Please enter 'Retry' or 'End Game'.");
+            retry = prompt.question("Try Again: ");
+        }
+       
+    //IF PLAYER WANTS TO END GAME
+    if (retry && retry.toLowerCase() === "end game") 
+    {
+        console.log("\nGame Over. Well Done !");
+        console.log ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Quiz Summary!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        console.log("Username: " + name);
+        console.log("Total Questions Answered: " + (correctanswer + wronganswer));
+        console.log("Correct Answers: " + correctanswer);
+        console.log("Wrong Answers: " + wronganswer);
+        console.log("Score: " + score + " / 5");
+        process.exit(0);
+    }
+    //IF PLAYER WANTS TO RETRY
+    else
+    {
+        console.log("\nYou have chosen to start this level again. Good luck!");
+    
+     // this resets the level variables so that the player can start over.
+        correctanswer = 0;
+        wronganswer = 0;
+        levelcorrect = 0;
+        score = 0;
+        
+     // THIS ALLOWS THE CODE TO RESTART THE LEVEL WITHOUT EXITING THE LOOP.
+     continue;
+     
+    }
+    }
+    
     break;
 
     case 4:
